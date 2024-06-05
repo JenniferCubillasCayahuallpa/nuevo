@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I.E.P "Zoilo Candela Sánchez - Calendario"</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css'>
+    <link rel="stylesheet" href="./css/eventos y noticias.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="website icon" type="png" href="./img/logo.jpg">
+    <link rel="stylesheet" href="./css/dycalendar.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+              <li onclick=hideSidebar()><a href="#"></a><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                  viewBox="0 -960 960 960" width="26" fill="#5f6368">
+                  <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg></li>
+             <li><a href="./inicio.html">Inicio</a></li>
+              <li><a href="./nosotros.html">Nosotros</a></li>
+              <li><a href="./eventos y noticias.html">Eventos y Noticias</a></li>
+              <li><a href="#">Talleres</a></li>
+              <li><a href="#">Logros</a></li>
+              <li><a href="./contactenos.html">Contáctanos</a></li>
+              <li class="hideOnMobile">
+                    <a href="http://localhost/login-register/">SIGN IN</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="./inicio.html">Inicio</a></li>
+              <li class="hideOnMobile"><a href="./nosotros.html">Nosotros</a></li>
+              <li class="hideOnMobile"><a href="./eventos y noticias.html">Eventos y Noticias</a></li>
+              <li class="hideOnMobile"><a href="#">Talleres</a></li>
+              <li class="hideOnMobile"><a href="#">Logros</a></li>
+              <li class="hideOnMobile"><a href="./contactenos.html">Contáctanos</a></li> 
+              <li class="hideOnMobile">
+                    <a href="http://localhost/login-register/">SIGN IN</a>
+                </li>
+              <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960"
+                    width="26" fill="#5f6368">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                  </svg></a></li>
+            </ul>
+          </nav>
+          <script>
+            function showSidebar( ){
+              const sidebar = document.querySelector(' .sidebar')
+              sidebar.style.display = 'flex'
+            }
+            function hideSidebar( ){
+              const sidebar = document.querySelector(' .sidebar')
+              sidebar.style.display = 'none'
+            }
+          </script>
+    </header>
+    <section id="hero">
+        <h1 id="titulo" class="inicio1">"Descubre lo que tenemos preparado para este mes en nuestra escuela"</h1>
+    </section>
+    <section>
+    <div class="title">
+        <marquee><center><h1>CRONOGRAMA DE ACTIVIDADES</h1></center></marquee> 
+    </div>
+</section>
+<section class="actualizacion">
+<div id="showData">
+
+</div>
+</section>
+<section class="cronograma">
+    <div class="box">
+        <div class="container">
+<div id="dycalendar">
+
+</div>
+        </div>
+    </div>
+    <script src="./js/dycalendar.js"></script>
+    <script>
+        dycalendar.draw({
+            target: '#dycalendar' ,
+            type:'month',
+            highlighttargetdate: true,
+            prevnextbutton:'show'
+        })
+    </script>
+</section>
+<section>
+    <iframe class="mapa"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.68364706405!2d-76.35734932573519!3d-13.055797561506333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910ffbdb773fffff%3A0x289497f5c9b7d7cb!2sC.E.%2021001!5e0!3m2!1ses!2spe!4v1713739799814!5m2!1ses!2spe"
+        width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<script src="./js/ale.js"></script>
+</body>
+<footer>
+    <img class="iep" src="./img/WhatsApp_Image_2024-04-16_at_7.16.43_PM-removebg.png">
+    <div class="container-footer-all">
+        <div class="containerbody">
+            <div class="colum2">
+                <h1 class="info">INFORMACIÓN DE CONTACTO</h1>
+                <div class="row">
+                    <img src="./img/colegio.png">
+                    <label>Av. Oscar Ramos Cabieses, Imperial 15701</label>
+                </div>
+                <div class="row">
+                    <img src="./img/telefono.png">
+                    <label>+51 999-999-999</label>
+                </div>
+                <div class="row">
+                    <img src="./img/email.png">
+                    <label>iepzoilocandelsanchez@gmail.com</label>
+                </div>
+            </div>
+            <div class="colum4">
+                <h1 class="info3">MENÚ</h1>
+                <div class="row3">
+                    <li><a href="./index5.html">Nosotros</a></li>
+                    <li><a href="./index6.html">Nivel</a></li>
+                    <li><a href="./index4.html">Eventos y Noticias</a></li>
+                    <li><a href="">Talleres</a></li>
+                    <li><a href="">Logros</a></li>
+                    <li><a href="index2.html">Contáctenos</a></li>
+                </div>
+            </div>
+            <div class="colum3">
+                <h1 class="info2">REDES SOCIALES</h1>
+                <div class="row2">
+                    <img src="./img/facebook.png">
+                    <a href="https://m.facebook.com/100009494912655/">Facebook</a>
+                </div>
+                <div class="row2">
+                    <img src="./img/whatsapp.png">
+                    <a href="">WhattsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="librodereclamaciones">
+        <img src="./img/libro-abierto.png">
+        <a href="./index7.html">Libro de Reclamaciones</a>
+    </div>
+    <hr>
+    <div class="containerfooter">
+        <div class="copyright">
+            &copy; 2024 <a href="https://vallegrande.edu.pe/">Valle Grande</a>
+        </div>
+</footer>
+</html>

@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&family=Rubik+Bubbles&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+h1{ 
+ font-size: 3.5em;
+ font-family: "Arvo", serif;
+}
+.vs{
+ font-size: 3.5em;
+ font-family: "Arvo", serif;
+ color: #172a5f;
+}
+h2{
+ font-size: 2.7em;
+}
+h3{
+ font: size 1.25em;
+}
+
+ul{
+ list-style: none;
+}
+li{
+ font-size: 1.25em;
+}
+nav {
+  background-color: rgba(255, 255, 255, 0.986);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li {
+  height: 50px;
+}
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
+nav a:hover {
+  background-color: #8b8b8b;
+  color: rgb(255, 255, 255);
+}
+nav li:first-child {
+  margin-right: auto;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgb(255, 255, 255);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+.menu-button{
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+
+
+#hero{
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ flex-direction: column;
+ height: 150vh;
+ color: rgb(255, 255, 255);
+ background-image: linear-gradient(
+     0deg,
+     rgba(0, 0, 0, 0.5),
+     rgba(0,0,0,0.5)
+ ) 
+ ,url(../img/patio\ \(1\).jpeg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center center;
+ margin-top: -200px;
+}
+
+.inicio1{
+text-align: center;
+padding-top: 400px;
+color: rgb(255, 255, 255);
+font-size: 60px;
+margin: 15px;
+}
+
+footer{
+  background-color: rgb(41, 51, 66);
+  color: rgb(255, 255, 255);
+  padding-top: 40px;
+ }
+ .container-footer-all{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+ }
+
+ .containerbody{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+ }
+
+ .iep{
+  float: left;
+  margin: 2px;
+  padding: auto;
+  width: 20%;
+  height: 30%;
+  margin-top: 50px;
+ }
+ 
+ .column2{
+  max-width: 100px;
+  margin: 10px;
+ }
+ .info{
+ font-size: 20px;
+ margin: 10px;
+ }
+
+.colum2 .row{
+ margin-top: 20px;
+ display: flex;
+ font-size: 15px;
+}
+.row img{
+  width: 35px;
+  height: 35px;
+}
+
+.row label{
+  margin: 10px;
+}
+.column3{
+  max-width: 100px;
+  margin: 20px;
+ }
+
+.column4{
+  max-width: 100px;
+  margin: 8px;
+}
+
+.info2{
+ font-size: 25px;
+ margin: 10px;
+ }
+.info3{
+  font-size: 25px;
+  margin: 10px;
+}
+
+
+.column4 .row3 {
+  margin-top: 20px;
+  display: flex;
+  margin: 10px;
+}
+
+ .row3 a{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  margin: 10px;
+}
+
+.colum3 .row{
+ margin-top: 20px;
+ display: flex;
+ margin: 30px;
+}
+.colum4 .row{
+  margin-top: 20px;
+  margin: 10px;
+ }
+ 
+.row2 img{
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
+}
+
+.row2 a{
+  margin: 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.librodereclamaciones a{
+  text-decoration: none;
+  color: #ffffff;
+  }
+.librodereclamaciones{
+margin-left: 1010px;
+}
+.librodereclamaciones img{
+margin-right: 10px;
+width: 40px;
+height: 40px;
+}
+.containerfooter{
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  margin: 20px;
+ }
+
+ .copyright{
+  margin-top: -20px;
+  float: none;
+  margin-left: 560px;
+  margin-right: 300px;
+ }
+ .copyright a{
+  text-decoration: none;
+  color: #ffffff; 
+ }
+
+.contenedor{
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 500px;
+  margin-right: 380px;
+  margin-top: -220px;
+}
+
+.logo{
+  width: 300px;
+  height: 150px;
+  background: url(img/WhatsApp_Image_2024-04-16_at_7.16.43_PM-removebg.png);
+  background-size: cover;
+  margin-right: -280px;
+  margin-top: -100px;
+}
+
+body {
+background: white;
+font-family: "Varela Round", sans-serif;
+}
+
+.card {
+background: white;
+box-shadow: 0 0 20px rgba(0,0,0,0.4);
+border-radius: 1px;
+margin: 50px 20px 20px 20px;
+width: calc(33.3333% - 40px); 
+padding: 20px;
+text-align: center;
+color: white;
+float: left;
+}
+
+.icon {
+  margin: 30px ;
+}
+
+.features{
+  color: #000;
+  font-size: 20px;
+  font-family: "Sedan", serif;
+}
+button {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #ffffff;
+  z-index: 1;
+  background: #0c182e;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+  margin: 50px;
+  font-family:"Ubuntu Sans", sans-serif;
+ }
+ 
+ button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #316269;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms
+ }
+ 
+ button:hover {
+  color: #ffffff;
+ }
+ 
+ button:hover::before {
+  width: 100%;
+ }
+ .contenedor1{
+  background-color: #ffffff;
+ }
+ .contenedor2{
+  background-color: #AAD7D9;
+ }
+
+hr{
+  margin-top:40px;
+  background-color: #837e7e;
+}
+.contenedor{
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 500px;
+  margin-right: 380px;
+  margin-top: -220px;
+}
+
+.logo{
+  width: 300px;
+  height: 150px;
+  background: url(../img/WhatsApp_Image_2024-04-16_at_7.16.43_PM-removebg.png);
+  background-size: cover;
+  margin-right: -280px;
+  margin-top: -100px;
+}
+
+body {
+background: white;
+font-family: "Varela Round", sans-serif;
+}
+
+.card {
+background: white;
+box-shadow: 0 0 20px rgba(0,0,0,0.4);
+border-radius: 1px;
+margin: 50px 20px 20px 20px;
+width: calc(33.3333% - 40px); 
+padding: 20px;
+text-align: center;
+color: white;
+float: left;
+}
+
+.icon {
+  margin: 50px 0;
+}
+
+.features{
+  color: #000;
+  font-size: 20px;
+  font-family: "Sedan", serif;
+}
+
+.btn {
+  display: block;
+  background: #3b3d42;
+  color: white;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,0.9);
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+}
+  .btn:hover {
+    background: #183153;
+  }
+
+hr{
+  margin-top:40px;
+  background-color: #837e7e;
+  border-color: #837e7e;
+  height: 3px;
+}
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contenedor1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  
+  }
+
+  @keyframes show {
+    from {
+      opacity: 0;
+      scale: 25%;
+    }
+  
+    to {
+      opacity: 1;
+      scale: 100%;
+    }
+  }
+
+  .imagen-clase2 {
+    margin: 55px;
+    cursor: pointer;
+    transition: 4s;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    border: 3px dashed #234068;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 10% cover 20%;
+    animation-fill-mode: both;
+  }
+.imagen-clase2:hover {
+    transform: scale(1.1);
+    transition: 4s;
+}
+  .Nuestra-Misión {
+    width: 40%;
+    padding: 20px;
+    font-size: 20px;
+    color:#172a5f;
+  }
+  
+  .Nuestra-Misión h1 {
+    margin-bottom: 15px;
+  }
+  
+   p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify; 
+    color: #585858;
+  }
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.contenedor2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.imagen-clase2 {
+  width: 50%;
+}
+.imagen-clase2 img {
+  width: 100%;
+  height: auto;
+}
+.Nuestra-Visión {
+  width: 40%;
+  padding: 50px;
+  font-size: 20px;
+  color: #000;
+}
+.Nuestra-Visión h1 {
+  margin-bottom: 15px;
+  color: #000;
+}
+.Nuestra-Visión p {
+  line-height: 1.6;
+  color: #000;
+}
+.Nuestra-Visión p {
+  text-align: justify; /* Justifica el texto */
+}
+@media only screen and (max-width: 768px) {
+  
+
+  /* Ajuste del tamaño de los íconos de redes sociales */
+  .row2 img {
+      width: 20px;
+      height: 90px;
+      margin-top: 5px;
+      
+  }
+
+  /* Ajuste del tamaño del ícono del libro de reclamaciones */
+  .librodereclamaciones img {
+      width: 30px;
+      height: 30px;
+  }
+
+
+  .libros {
+      margin-left: 20px;
+      margin-top: 25px;
+      width: 250px;
+  }
+
+  .copyright {
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+
+  .librodereclamaciones {
+      margin-left: 20px;
+  }
+
+  .containerfooter {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+
+}
